@@ -7,7 +7,7 @@ y los proyectos reales que he construido.
 Python · PHP · JavaScript · HTML/CSS · SQL · Power BI · Excel
 
 ## Ver el sitio
-https://jolubaqui.github.io/portfolio
+[https://jolubaqui.github.io/portfolio](https://jolubaqui.github.io/portfolio/)
 
 ## Sobre este proyecto
 Desarrollado mientras trabajo en la industria láctea, aplicando
