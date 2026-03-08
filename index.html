@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio | Desarrollador de Sistemas</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&family=Lora:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="cursor"></div>
+    <div id="cursor-ring"></div>
+
+    <!-- NAV -->
+    <nav>
+      <a href="#" class="nav-logo">Dev<span>.</span>Portafolio</a>
+      <ul class="nav-links">
+        <li><a href="#skills">Habilidades</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#about">Sobre mí</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero">
+      <div class="hero-left">
+        <div class="hero-tag">Desarrollador de Sistemas · En formación</div>
+        <h1>Código con<br /><em>propósito</em><br />real.</h1>
+        <p class="hero-desc">
+          Transformo <strong>procesos del mundo real</strong> en soluciones
+          digitales. Con experiencia directa en la industria láctea y formación
+          activa en desarrollo, construyo sistemas que resuelven problemas que
+          <strong>yo mismo he vivido</strong>.
+        </p>
+        <a href="#projects" class="btn-primary">
+          Ver mis proyectos <span class="arrow">→</span>
+        </a>
+      </div>
+      <div class="hero-right">
+        <div class="hero-graphic">
+          <div class="code-block">
+            <span class="c-comment"># Sistema de recepción de leche</span><br />
+            <span class="c-key">def</span>
+            <span class="c-fn">registrar_proveedor</span>(<br />
+            &nbsp;&nbsp;litros: <span class="c-fn">float</span>,<br />
+            &nbsp;&nbsp;proveedor: <span class="c-str">"str"</span>,<br />
+            &nbsp;&nbsp;calidad: <span class="c-fn">int</span><br />
+            ) -> <span class="c-fn">dict</span>:<br /><br />
+            &nbsp;&nbsp;pago = litros * <span class="c-num">1850</span><br />
+            &nbsp;&nbsp;<span class="c-key">return</span> {<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="c-str">"proveedor"</span>:
+            proveedor,<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="c-str">"pago"</span>: pago,<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="c-str">"lote"</span>:
+            <span class="c-fn">generar_lote</span>()<br />
+            &nbsp;&nbsp;}
+          </div>
+          <div class="hero-badge">En<br />Aprendizaje<br />2026–</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <div class="stats-bar">
+      <div class="stat">
+        <span class="stat-num">7+</span>
+        <span class="stat-label">Tecnologías aprendidas</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num">53</span>
+        <span class="stat-label">Años de experiencia de vida</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num">∞</span>
+        <span class="stat-label">Motivación</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num">12</span>
+        <span class="stat-label">Meses para el objetivo</span>
+      </div>
+    </div>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <div class="section-header reveal">
+        <span class="section-num">01.</span>
+        <h2>Mis <em>habilidades</em></h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <span class="skill-icon">🐍</span>
+          <div class="skill-name">Python</div>
+          <div class="skill-desc">
+            Automatización, manejo de datos, scripts para procesos de negocio.
+            Mi lenguaje principal de aprendizaje.
+          </div>
+          <div class="skill-level">
+            <div class="level-bar">
+              <div class="level-fill" style="width: 60%"></div>
+            </div>
+            <span class="level-label">Intermedio</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <span class="skill-icon">🌐</span>
+          <div class="skill-name">PHP + HTML + CSS</div>
+          <div class="skill-desc">
+            Desarrollo web del lado del servidor y frontend. Creación de
+            interfaces funcionales y formularios dinámicos.
+          </div>
+          <div class="skill-level">
+            <div class="level-bar">
+              <div class="level-fill" style="width: 45%"></div>
+            </div>
+            <span class="level-label">Básico–Intermedio</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <span class="skill-icon">⚡</span>
+          <div class="skill-name">JavaScript</div>
+          <div class="skill-desc">
+            Interactividad en el navegador, validaciones y lógica del lado del
+            cliente.
+          </div>
+          <div class="skill-level">
+            <div class="level-bar">
+              <div class="level-fill" style="width: 35%"></div>
+            </div>
+            <span class="level-label">Básico</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <span class="skill-icon">🗄️</span>
+          <div class="skill-name">SQL</div>
+          <div class="skill-desc">
+            Diseño de bases de datos, consultas, reportes. Aplicado en sistemas
+            de control de proveedores y pagos.
+          </div>
+          <div class="skill-level">
+            <div class="level-bar">
+              <div class="level-fill" style="width: 55%"></div>
+            </div>
+            <span class="level-label">Intermedio</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <span class="skill-icon">📊</span>
+          <div class="skill-name">Power BI</div>
+          <div class="skill-desc">
+            Dashboards y visualización de datos para la toma de decisiones.
+            Reportes de producción y ventas.
+          </div>
+          <div class="skill-level">
+            <div class="level-bar">
+              <div class="level-fill" style="width: 50%"></div>
+            </div>
+            <span class="level-label">Intermedio</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <span class="skill-icon">📋</span>
+          <div class="skill-name">Excel Avanzado</div>
+          <div class="skill-desc">
+            Sistemas de control desarrollados en producción real: recepción de
+            leche, pagos a proveedores, inventario de quesos.
+          </div>
+          <div class="skill-level">
+            <div class="level-bar">
+              <div class="level-fill" style="width: 75%"></div>
+            </div>
+            <span class="level-label">Avanzado</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="section-header reveal">
+        <span class="section-num" style="color: var(--gold)">02.</span>
+        <h2>Mis <em>proyectos</em></h2>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card reveal">
+          <span class="project-tag">Excel · En producción</span>
+          <div class="project-title">Sistema de Control Lácteo</div>
+          <div class="project-desc">
+            Hoja de cálculo avanzada para una empresa procesadora de quesos.
+            Gestiona recepción de leche de múltiples proveedores, cálculo
+            automático de pagos, control de calidad y trazabilidad del producto
+            terminado.
+          </div>
+          <div class="project-tech">
+            <span class="tech-pill">Excel</span>
+            <span class="tech-pill">Power Query</span>
+            <span class="tech-pill">Fórmulas avanzadas</span>
+            <span class="tech-pill">Dashboards</span>
+          </div>
+          <span class="project-coming">✓ Funcionando en empresa real</span>
+        </div>
+
+        <div class="project-card reveal">
+          <span class="project-tag">Python · En desarrollo</span>
+          <div class="project-title">Automatizador de Reportes</div>
+          <div class="project-desc">
+            Script Python que lee datos de Excel, genera reportes automáticos en
+            PDF y envía resúmenes diarios de producción. Primer proyecto de
+            automatización real.
+          </div>
+          <div class="project-tech">
+            <span class="tech-pill">Python</span>
+            <span class="tech-pill">pandas</span>
+            <span class="tech-pill">openpyxl</span>
+            <span class="tech-pill">reportlab</span>
+          </div>
+          <span class="project-coming">⟳ En construcción</span>
+        </div>
+
+        <div class="project-card reveal">
+          <span class="project-tag">SQL + PHP · Próximo</span>
+          <div class="project-title">Sistema Web de Proveedores</div>
+          <div class="project-desc">
+            Migración del sistema Excel a una aplicación web completa: base de
+            datos MySQL, panel de administración en PHP, reportes dinámicos y
+            acceso desde cualquier dispositivo.
+          </div>
+          <div class="project-tech">
+            <span class="tech-pill">PHP</span>
+            <span class="tech-pill">MySQL</span>
+            <span class="tech-pill">HTML/CSS</span>
+            <span class="tech-pill">JavaScript</span>
+          </div>
+          <span class="project-coming">○ Planificado Q2 2025</span>
+        </div>
+
+        <div class="project-card reveal">
+          <span class="project-tag">Power BI · En desarrollo</span>
+          <div class="project-title">Dashboard de Producción</div>
+          <div class="project-desc">
+            Panel interactivo con KPIs clave: litros recibidos por proveedor,
+            rendimiento de queso por lote, costos vs ingresos y proyecciones de
+            producción mensual.
+          </div>
+          <div class="project-tech">
+            <span class="tech-pill">Power BI</span>
+            <span class="tech-pill">DAX</span>
+            <span class="tech-pill">Power Query</span>
+          </div>
+          <span class="project-coming">⟳ En construcción</span>
+        </div>
+
+        <div
+          class="project-card reveal"
+          style="border-style: dashed; opacity: 0.7"
+        >
+          <span
+            class="project-tag"
+            style="background: rgba(212, 168, 67, 0.2); color: var(--gold)"
+            >Espacio libre</span
+          >
+          <div class="project-title" style="color: var(--light-sage)">
+            Tu próximo proyecto
+          </div>
+          <div class="project-desc">
+            Este espacio crece contigo. Cada cosa que aprendas y construyas
+            tiene lugar aquí. El portafolio es un documento vivo.
+          </div>
+          <div class="project-tech">
+            <span
+              class="tech-pill"
+              style="border-color: rgba(212, 168, 67, 0.2); color: var(--sage)"
+              >Por descubrir</span
+            >
+          </div>
+          <span class="project-coming">+ Añadir pronto</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="about-text reveal">
+        <div class="section-header" style="margin-bottom: 2rem">
+          <span class="section-num">03.</span>
+          <h2>Sobre <em>mí</em></h2>
+        </div>
+        <p>
+          Tengo 53 años y tomé la decisión de
+          <strong>reinventarme como desarrollador de software</strong>. No
+          empecé desde cero — empecé desde la experiencia. Años trabajando en
+          una empresa procesadora de lácteos me dieron algo que no se enseña en
+          ningún bootcamp:
+          <strong
+            >entender exactamente qué problema necesita ser resuelto</strong
+          >.
+        </p>
+        <p>
+          Mientras aprendía Python, HTML, PHP y SQL, simultáneamente construía
+          <strong>herramientas reales</strong> usadas en el día a día de la
+          empresa. Eso es lo que me diferencia: no hago proyectos de práctica
+          genéricos, hago software con propósito.
+        </p>
+        <p>
+          Mi objetivo es convertirme en
+          <strong>desarrollador de sistemas de información</strong>
+          antes de que termine el año. Cada día de estudio me acerca más a ese
+          punto.
+        </p>
+      </div>
+      <div class="about-visual reveal">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="t-year">2020 · Inicio</div>
+            <div class="t-title">Primera línea de código</div>
+            <div class="t-desc">
+              Python, HTML, CSS. La chispa de entender que podía construir lo
+              que imaginaba.
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="t-year">2022 · En curso</div>
+            <div class="t-title">Sistemas reales en Excel</div>
+            <div class="t-desc">
+              Control completo de la operación láctea: proveedores, pagos,
+              inventario y quesos.
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="t-year">2025 · En curso</div>
+            <div class="t-title">SQL, PHP, Power BI, JS</div>
+            <div class="t-desc">
+              Ampliando el stack. Aprendiendo bases de datos, reportes y
+              aplicaciones web completas.
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="t-year">2025 · Meta</div>
+            <div class="t-title">Desarrollador de Sistemas</div>
+            <div class="t-desc">
+              El objetivo está claro. Con experiencia de industria + habilidades
+              técnicas = valor real para cualquier empresa.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div
+        class="section-header reveal"
+        style="justify-content: center; margin-bottom: 0.5rem"
+      >
+        <span class="section-num" style="color: var(--rust)">04.</span>
+        <h2>Hablemos <em>pronto</em></h2>
+      </div>
+      <p class="subtitle reveal">
+        ¿Tienes un proyecto o una oportunidad? Estoy disponible.
+      </p>
+      <div class="contact-grid reveal">
+        <a href="mailto:tu@email.com" class="contact-item">
+          <span class="ci-icon">✉</span> tu@email.com
+        </a>
+        <a
+          href="https://linkedin.com/in/tu-perfil"
+          class="contact-item"
+          target="_blank"
+        >
+          <span class="ci-icon">in</span> LinkedIn
+        </a>
+        <a
+          href="https://github.com/tu-usuario"
+          class="contact-item"
+          target="_blank"
+        >
+          <span class="ci-icon">⌥</span> GitHub
+        </a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <span class="footer-copy"
+        >© 2026 · Construido con <span>♥</span> y mucho café</span
+      >
+      <span class="footer-copy" style="color: #3a3a38"
+        >Hecho en Colombia 🇨🇴</span
+      >
+    </footer>
+    <script src="script.js" defer></script>
+  </body>
+</html>
